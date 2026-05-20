@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amma 🌸</title>
+
+    <link rel="stylesheet" href="diseno.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            <h1>Amma 🌸</h1>
+            <p>Tu espacio seguro y emocional </p>
+        </div>
+
+        <nav>
+            <a href="#chat">Chat IA</a>
+            <a href="#emociones">Emociones</a>
+            <a href="#diario">Diario</a>
+            <a href="#respiracion">Respira</a>
+        </nav>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h2>Un lugar para sentirte escuchado ☀️</h2>
+
+            <p>
+                Amma está aquí para acompañarte,
+                escucharte y ayudarte a expresar
+                todo lo que sientes 💛
+            </p>
+
+            <button onclick="changeQuote()">
+                Comenzar 
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- CHAT -->
+
+    <section id="chat" class="card">
+
+        <h2>Habla con Amma 😊</h2>
+
+        <div class="chat-box" id="chatBox">
+
+            <div class="message amma">
+                Hola ☀️ ¿Cómo estuvo tu día?
+            </div>
+
+        </div>
+
+        <div class="chat-input">
+
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Cuéntame cómo te sientes"
+            >
+
+            <button onclick="sendMessage()">
+                Enviar 
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- EMOCIONES -->
+
+    <section id="emociones" class="card">
+
+        <h2>¿Cómo te sientes hoy?</h2>
+
+        <div class="emociones">
+
+            <div class="emocion feliz">
+                😊 Feliz
+            </div>
+
+            <div class="emocion triste">
+                😢 Triste
+            </div>
+
+            <div class="emocion ansiedad">
+                😰 Ansiedad
+            </div>
+
+            <div class="emocion cansado">
+                🥺 Cansado
+            </div>
+
+            <div class="emocion calmado">
+                😌 En paz
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FRASES -->
+
+    <section class="frase">
+
+        <h2>Un mensaje para ti 💛</h2>
+
+        <p id="quote">
+            “El sol sale para todos, incluso después de los días grises ☀️”
+        </p>
+
+        <button onclick="changeQuote()">
+            Otra frase 
+        </button>
+
+    </section>
+
+    <!-- RESPIRACIÓN -->
+
+    <section id="respiracion" class="card">
+
+        <h2>Respira conmigo 🌤️</h2>
+
+        <div class="circle"></div>
+
+        <p>
+            Inhala la flor🌷 <br>
+            Sopla la vela🕯️ 
+        </p>
+
+    </section>
+
+    <!-- DIARIO -->
+
+    <section id="diario" class="card">
+
+        <h2>Tu diario emocional 📖</h2>
+
+        <textarea
+            id="journal"
+            placeholder="Escribe aquí todo lo que quieras sacar de tu corazón 🌸"
+        ></textarea>
+
+        <button onclick="saveJournal()">
+            Guardar 
+        </button>
+
+        <p id="saveMessage"></p>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            Amma 🌸 | Tu acompañante emocional digital
+        </p>
+
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

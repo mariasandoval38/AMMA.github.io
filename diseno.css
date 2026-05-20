@@ -1,0 +1,269 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#fffaf5;
+    color:#5c4b51;
+}
+
+/* HEADER */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#fdeee7;
+    position:sticky;
+    top:0;
+}
+
+.logo h1{
+    color:#d88c9a;
+}
+
+.logo p{
+    color:#8a7a7a;
+}
+
+nav a{
+    text-decoration:none;
+    margin-left:20px;
+    color:#7a6a6a;
+}
+
+nav a:hover{
+    color:#d88c9a;
+}
+
+/* HERO */
+
+.hero{
+    min-height:85vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+    background:linear-gradient(
+        135deg,
+        #fff3e6,
+        #fde2e4,
+        #dbeafe
+    );
+}
+
+.hero-text{
+    max-width:700px;
+}
+
+.hero h2{
+    font-size:4rem;
+    margin-bottom:20px;
+    color:#c97c8a;
+}
+
+.hero p{
+    font-size:1.2rem;
+    line-height:1.8;
+}
+
+.hero button{
+    margin-top:30px;
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    background:#f8c8dc;
+    cursor:pointer;
+}
+
+/* TARJETAS */
+
+.card{
+    width:85%;
+    margin:50px auto;
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card h2{
+    margin-bottom:25px;
+    color:#d88c9a;
+}
+
+/* CHAT */
+
+.chat-box{
+    background:#fff7f0;
+    height:300px;
+    border-radius:20px;
+    padding:20px;
+    overflow-y:auto;
+}
+
+.message{
+    padding:12px 18px;
+    margin-bottom:15px;
+    border-radius:20px;
+    width:fit-content;
+    max-width:70%;
+}
+
+.amma{
+    background:#fde2e4;
+}
+
+.user{
+    background:#dbeafe;
+    margin-left:auto;
+}
+
+.chat-input{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+}
+
+.chat-input input{
+    flex:1;
+    padding:15px;
+    border:none;
+    border-radius:15px;
+    background:#fff7f0;
+}
+
+.chat-input button{
+    border:none;
+    padding:15px 20px;
+    border-radius:15px;
+    background:#f8c8dc;
+    cursor:pointer;
+}
+
+/* EMOCIONES */
+
+.emociones{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.emocion{
+    padding:15px 25px;
+    border-radius:20px;
+    font-weight:500;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.emocion:hover{
+    transform:translateY(-5px);
+}
+
+.emocion.selected{
+    border:3px solid #d88c9a;
+    transform:scale(1.05);
+}
+
+.feliz{
+    background:#ffeaa7;
+}
+
+.triste{
+    background:#a0c4ff;
+}
+
+.ansiedad{
+    background:#ffd6a5;
+}
+
+.cansado{
+    background:#e7c6ff;
+}
+
+.calmado{
+    background:#bde0fe;
+}
+
+/* FRASES */
+
+.frase{
+    text-align:center;
+    padding:50px;
+}
+
+.frase h2{
+    color:#d88c9a;
+}
+
+.frase p{
+    margin:20px 0;
+    font-size:1.5rem;
+}
+
+/* RESPIRACIÓN */
+
+.circle{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    margin:30px auto;
+    background:linear-gradient(
+        135deg,
+        #ffd6e7,
+        #bde0fe
+    );
+
+    animation:breathe 6s infinite;
+}
+
+@keyframes breathe{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.2);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/* DIARIO */
+
+textarea{
+    width:100%;
+    height:220px;
+    border:none;
+    border-radius:20px;
+    padding:20px;
+    background:#fff7f0;
+    resize:none;
+    margin-bottom:20px;
+}
+
+#diario button{
+    padding:12px 25px;
+    border:none;
+    border-radius:20px;
+    background:#f8c8dc;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#fdeee7;
+    margin-top:50px;
+}
